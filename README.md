@@ -223,7 +223,7 @@ while True:
 ![Gamabar Ubah](screenshot/4.png)
 
 ### Lihat Data
-![Gambar View](Screenshot/5.png)
+![Gambar View](screenshot/5.png)
 
 ### Hapus Data
 ![Gambar Delete](screenshot/6.png)
