@@ -1,21 +1,3 @@
-# UAS Bahasa Pemograman
-
-***Soal***
-![Gambar Soal](screenshot/1.png)
-
-***Program Module***
-![Gambar program](screenshot/8.png)
-
-***Penjelasan***
-
-### model
-
-daftar_nilai.py
-
-*-Tambah_Nilai*
-- Membuat variabel dict dengan nama ```data = {}``` dengan nilai kosong
-- lalu terdapat function ```def tambah_data():``` yang berfungsi untuk Menambah Data Mahasiswa
-```bash
 from view.input_nilai import *
 
 data = {}
@@ -37,10 +19,7 @@ def tambah_data():
         if ulangi == 't':
             print('\nData Atas Nama',nama, 'Dengan NIMt',nim, 'Berhasil Ditambahkan!')
             return data
-```
 
-- lalu terdapat function ```def tambah_data():``` yang berfungsi untuk Menambah Data Mahasiswa
-```bash
 # Mengubah data
 def ubah_data():
     nama = input("Masukan nama untuk mengubah data: ")
@@ -78,10 +57,7 @@ def ubah_data():
 
     else:
         print("'{}' tidak ditemukan.".format(nama))
-```
 
-- lalu ada function ```def hapus_data():``` yang berfungsi untuk menghapus data yang telah diinput sebelumnya
-```bash
 # Menghapus data
 def hapus_data():
     nama = input("Masukan nama untuk menghapus data : ")
@@ -90,10 +66,7 @@ def hapus_data():
         print("\nData '{}' berhasil dihapus.".format(nama))
     else:
         print("'{}' tidak ditemukan.".format(nama))
-```
 
-- function ```def cari_data():``` yang berfungsi untuk mancari data yang sudah diinput
-```bash
 # Mencari data
 def cari_data():
     print("Mencari data: ")
@@ -109,125 +82,3 @@ def cari_data():
         print('--------------------------------------------------------------')
     else:
         print("'{}' tidak ditemukan.".format(nama))
-```
-
-*-view*
-
-input_nilai.py
-
-- membuat function ```def input_nama():``` berfungsi untuk menginputkan nama
-```bash
-def input_nama():
-    print("\nMasukkan data mahasiswa")
-    print("...")
-    global nama
-    nama = input("\nNama        : ")
-    return nama
-```
-
-- membuat fuction ```def input_nim```berfungsi menginput NIM
-```bash
-def input_nim():
-    global nim
-    nim = input("NIM         : ")
-    return nim
-```
-
-- membuat function ```def input_ntugas():```berfungsi untuk menginput nilai tugas
-```bash
-def input_ntugas():
-    global nilai_tugas
-    nilai_tugas = int(input("Nilai Tugas : "))
-    return nilai_tugas
-```
-
-- membuat fucntion```def input_nuts():```berfungsi untuk menginput nilai UTS
-```bash
-def input_nuts():
-    global nilai_uts
-    nilai_uts = int(input("Nilai UTS   : "))
-    return nilai_uts
-```
-
-- membuat function```def input_nuas():```berfungsi untuk meginput nilai UAS
-```bash
-def input_nuas():
-    global nilai_uas
-    nilai_uas = int(input("Nilai UAS   : "))
-    return nilai_uas
-```
-
-- membuat function```def nakhir():``` berfungsi untuk menjumlahakn antara nilai Tugas, UTS, UAS menjadi nilai rata-rata
-```bash
-def nakhir():
-    global nilai_akhir
-    nilai_akhir = (nilai_tugas)*30/100 + (nilai_uts)*35/100 + (nilai_uas)*35/100
-    return nilai_akhir
-```
-
-view_nilai.py
-
-- deklarasikan fungsi ``def lihat_data():`` Kita menggunakan kondisi percabangan if, ambil data dari ``data``
-- lalu cetak ``print()``
-
-
-Lalu yang terakhir kita eksekusi file main.py
-```bash
-from model.daftar_nilai import *
-from view.view_nilai import *
-
-#Mulai
-print("===============================================================")
-print("|                           Program 1                         |")
-print("===============================================================")
-
-while True:
-    print("\n")
-    menu = input("(L) Lihat, (T) Tambah, (H) Hapus, (U) Ubah, (C) Cari, (K) Keluar\nPilih menu: ")
-    print("\n")
-
-    # menu
-    if menu.lower() == 't':
-        tambah_data()
-
-    elif menu.lower() == 'c':
-        cari_data()
-
-    elif menu.lower() == 'l':
-        lihat_data()
-
-    elif menu.lower() == 'u':
-        ubah_data()
-
-    elif menu.lower() == 'h':
-        hapus_data()
-
-    # Keluar
-    elif menu.lower() == 'k':
-        break
-
-    else:
-        print("Upss ada yang salah, silahkan cek kembali.")
-
-```
-
-### Output
-
-kolom Perintah
-![Gambar Perintah](screenshot/2.png)
-
-Tambah Data
-![Gambar add](screenshot/3.png)
-
-Mengubah Data
-![Gamabar Ubah](screenshot/4.png)
-
-Lihat Data
-![Gambar View](Sreenshot/5.png)
-
-Hapus Data
-![Gambar Delete](screenshot/6.png)
-
-Cari Data
-![Gambar Cari](screenshot/7.png)
-
