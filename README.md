@@ -213,21 +213,21 @@ while True:
 
 ### Output
 
-kolom Perintah
+### kolom Perintah
 ![Gambar Perintah](screenshot/2.png)
 
-Tambah Data
+### Tambah Data
 ![Gambar add](screenshot/3.png)
 
-Mengubah Data
+### Mengubah Data
 ![Gamabar Ubah](screenshot/4.png)
 
-Lihat Data
-![Gambar View](Sreenshot/5.png)
+### Lihat Data
+![Gambar View](Screenshot/5.png)
 
-Hapus Data
+### Hapus Data
 ![Gambar Delete](screenshot/6.png)
 
-Cari Data
+### Cari Data
 ![Gambar Cari](screenshot/7.png)
 
