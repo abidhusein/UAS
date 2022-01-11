@@ -1,12 +1,12 @@
 # UAS Bahasa Pemograman
 
-***Soal***
+### Soal
 ![Gambar Soal](screenshot/1.png)
 
-***Program Module***
+### Program Module
 ![Gambar program](screenshot/8.png)
 
-***Penjelasan***
+### Penjelasan
 
 ### model
 
